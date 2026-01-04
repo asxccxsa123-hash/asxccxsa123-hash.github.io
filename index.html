@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣銀行四大體系導覽 - 四大體系分析</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+    body { font-family: 'Noto Sans TC', sans-serif; background-color: #f8fafc; }
+    .brand-card-vertical { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .brand-card-vertical:hover { transform: scale(1.02); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 max-w-6xl">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+            <i class="fas fa-building-columns text-white text-lg"></i>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-gray-900">銀行趨勢觀測站</h1>
+            <p class="text-sm text-gray-500">Banking Analysis Hub</p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="cathay.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors"><i class="fas fa-shield-heart mr-2"></i>國泰世華</a>
+          <a href="ctbc.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors"><i class="fas fa-hand-holding-dollar mr-2"></i>中國信託</a>
+          <a href="fubon.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors"><i class="fas fa-landmark mr-2"></i>台北富邦</a>
+          <a href="esun.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors"><i class="fas fa-mountain-sun mr-2"></i>玉山銀行</a>
+          <a href="reflection.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors"><i class="fas fa-file-alt mr-2"></i>學習心得</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+          <i class="fas fa-bars text-gray-600"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100">
+        <div class="flex flex-col space-y-3 pt-4">
+          <a href="cathay.html" class="text-gray-600 hover:text-blue-600 font-medium"><i class="fas fa-shield-heart mr-2"></i>國泰世華</a>
+          <a href="ctbc.html" class="text-gray-600 hover:text-blue-600 font-medium"><i class="fas fa-hand-holding-dollar mr-2"></i>中國信託</a>
+          <a href="fubon.html" class="text-gray-600 hover:text-blue-600 font-medium"><i class="fas fa-landmark mr-2"></i>台北富邦</a>
+          <a href="esun.html" class="text-gray-600 hover:text-blue-600 font-medium"><i class="fas fa-mountain-sun mr-2"></i>玉山銀行</a>
+          <a href="reflection.html" class="text-gray-600 hover:text-blue-600 font-medium"><i class="fas fa-file-alt mr-2"></i>學習心得</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16">
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <div class="mb-8">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">台灣銀行四大體系</h2>
+        <p class="text-xl text-gray-600 max-w-xl mx-auto">以「通路/數位/客群/風險」四面向，快速理解台灣大型銀行的策略與差異</p>
+      </div>
+        <div class="bg-white rounded-2xl shadow-lg p-8 max-w-md mx-auto border border-gray-100">
+          <div class="flex items-center justify-center space-x-3 mb-4">
+            <i class="fas fa-user-graduate text-blue-500 text-xl"></i>
+            <h3 class="text-xl font-semibold text-gray-900">學生資訊</h3>
+          </div>
+          <div class="space-y-3 text-gray-700">
+            <p class="flex items-center justify-center">
+              <i class="fas fa-users text-gray-400 mr-2"></i>
+              班級：日間四技金融管系
+            </p>
+            <p class="flex items-center justify-center">
+              <i class="fas fa-id-card text-gray-400 mr-2"></i>
+              學號：40933132
+            </p>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-12 max-w-4xl">
+    <div class="grid gap-6 md:gap-8">
+
+      <a href="cathay.html" class="brand-card-vertical bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 block">
+        <div class="p-8">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                <i class="fas fa-shield-heart text-blue-500 mr-3"></i>國泰世華銀行
+              </h3>
+              <p class="text-gray-600">以金控資源整合與數位化服務著稱，強調全通路客戶體驗與跨產品綁定。</p>
+            </div>
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+              <i class="fas fa-arrow-right text-blue-600"></i>
+            </div>
+          </div>
+          <div class="flex items-center text-blue-600 font-medium">了解經營核心 →</div>
+        </div>
+      </a>
+
+      <a href="ctbc.html" class="brand-card-vertical bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 block">
+        <div class="p-8">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                <i class="fas fa-hand-holding-dollar text-green-500 mr-3"></i>中國信託銀行
+              </h3>
+              <p class="text-gray-600">通路與客群經營能力強，重視支付/信用卡生態圈，並以數據驅動的風險管理見長。</p>
+            </div>
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+              <i class="fas fa-arrow-right text-green-600"></i>
+            </div>
+          </div>
+          <div class="flex items-center text-green-600 font-medium">了解經營核心 →</div>
+        </div>
+      </a>
+
+      <a href="fubon.html" class="brand-card-vertical bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 block">
+        <div class="p-8">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                <i class="fas fa-landmark text-orange-500 mr-3"></i>台北富邦銀行
+              </h3>
+              <p class="text-gray-600">企業金融與財富管理雙軸發展，強調集團資源協同與多元客群分層服務。</p>
+            </div>
+            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+              <i class="fas fa-arrow-right text-orange-600"></i>
+            </div>
+          </div>
+          <div class="flex items-center text-orange-600 font-medium">了解經營核心 →</div>
+        </div>
+      </a>
+
+      <a href="esun.html" class="brand-card-vertical bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 block">
+        <div class="p-8">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                <i class="fas fa-mountain-sun text-red-500 mr-3"></i>玉山銀行
+              </h3>
+              <p class="text-gray-600">以服務品質與數位創新聞名，強調顧客旅程設計、流程優化與品牌信任。</p>
+            </div>
+            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
+              <i class="fas fa-arrow-right text-red-600"></i>
+            </div>
+          </div>
+          <div class="flex items-center text-red-600 font-medium">了解經營核心 →</div>
+        </div>
+      </a>
+
+      <a href="reflection.html" class="brand-card-vertical bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl shadow-lg overflow-hidden block">
+        <div class="p-8 text-white">
+          <div class="flex items-start justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-bold mb-2"><i class="fas fa-file-alt mr-3"></i>學習心得報告</h3>
+              <p class="text-purple-100">整理銀行業的通路、數位轉型與風險控管重點，並反思資料蒐集與網頁製作的收穫。</p>
+            </div>
+            <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+              <i class="fas fa-arrow-right text-white"></i>
+            </div>
+          </div>
+          <div class="flex items-center font-medium">閱讀心得報告 →</div>
+        </div>
+      </a>
+    </div>
+
+    <section class="mt-16">
+      <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+          <i class="fas fa-chart-bar text-blue-500 mr-3"></i>體系核心優勢摘要
+        </h3>
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b border-gray-200">
+                <th class="text-left py-3 px-4 font-semibold text-gray-900">體系</th>
+                <th class="text-left py-3 px-4 font-semibold text-gray-900">強項</th>
+                <th class="text-left py-3 px-4 font-semibold text-gray-900">代表做法</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="border-b border-gray-100">
+                <td class="py-3 px-4 font-medium">國泰世華</td>
+                <td class="py-3 px-4">全通路/數位整合</td>
+                <td class="py-3 px-4">App 服務整合、金控交叉銷售</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 px-4 font-medium">中國信託</td>
+                <td class="py-3 px-4">支付與卡友生態</td>
+                <td class="py-3 px-4">信用卡/支付場景擴張、數據風控</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 px-4 font-medium">台北富邦</td>
+                <td class="py-3 px-4">企業金融/財富管理</td>
+                <td class="py-3 px-4">企業授信、分層理財服務</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-medium">玉山銀行</td>
+                <td class="py-3 px-4">服務品質/創新</td>
+                <td class="py-3 px-4">流程優化、顧客旅程與品牌信任</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-gray-900 text-white py-8 mt-16">
+    <div class="container mx-auto px-4 max-w-6xl text-center">
+      <p class="text-gray-400 mb-2">Banking Layout Analysis 2026</p>
+      <p class="text-sm text-gray-500">© 2026 台灣銀行體系分析報告</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {{
+      mobileMenu.classList.toggle('hidden');
+    }});
+  </script>
+</body>
+</html>
+
